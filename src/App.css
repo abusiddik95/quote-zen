@@ -12,9 +12,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
+.App{
   background-color: #282c34;
+}
+.main-App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,8 +23,32 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 500px;
+  margin: auto;
 }
-
+.main-App h1{
+  font-family: cursive;
+  font-size: 65px;
+  background: -webkit-linear-gradient(#fff, #1a7a64);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.quote_btn{
+  padding: 10px;
+  font-size: 14px;
+  font-family: ui-sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+a{
+  padding: 10px;
+  font-size: 14px;
+  color: #0cb8e7;
+  text-decoration: none;
+  font-family: ui-sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+}
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +61,4 @@
     transform: rotate(360deg);
   }
 }
+
