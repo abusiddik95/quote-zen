@@ -26,6 +26,8 @@ const App = () => {
           <h4>{quotes.author}</h4>
           <button onClick={getQuote} class="quote_btn">get quote</button>
           <a href={'https://twitter.com/intent/tweet?text=${quote.text}'}>Tweet</a>
+          <button onClick={getQuote}  href="something" class="button7" style="background-color:#2979FF">get quote</button>
+          <a href={'https://twitter.com/intent/tweet?text=${quote.text}'} class="button7" style="background-color:#CCCCCC; color:#000000">Tweet</a>
         </div>
     </div>
     );
