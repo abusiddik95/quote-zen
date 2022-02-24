@@ -24,7 +24,8 @@ const App = () => {
         <div className="quote-area">
             <p>{quotes.text}</p>
             <p>Author: {quotes.author}</p>
-            <div className="btn-area">
+            <div className="btn-area">  
+                <h1>Quote-zen</h1>
                <button  onClick={getQuote} class="button7" >Get Quote</button>
                <a href='https://twitter.com/intent/tweet?text=${quote.text}' class="button7">Tweet</a>
             </div>
