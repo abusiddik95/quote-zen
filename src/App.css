@@ -49,16 +49,78 @@ a{
   background-color: #0e242a;
 }
 
-.App-link {
-  color: #0e242a;
+.animation-area{
+}
+.animation-area ul.box-area{
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.box-area li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255,255,255,0.2);
+  animation: animate 20s linear infinite;
+  bottom: 10px;
+}
+.box-area li:nth-child(1){
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-area li:nth-child(2){
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
 }
 
+.box-area li:nth-child(3){
+  left: 30%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 1.5s;
+  animation-duration: 15s; 
+  animation-delay: 0s;
+}
+
+.box-area li:nth-child(4){
+  left: 70%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 1.5s;
+  animation-duration: 13s;
+}
+
+.box-area li:nth-child(5){
+  left: 60%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 1.5s;
+  animation-duration: 17s;
+}
+
+.box-area li:nth-child(6){
+  left: 16%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 1.s;
+  animation-duration: 10s;
+}
+@keyframes animate{
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
