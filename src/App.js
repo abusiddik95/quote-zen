@@ -31,7 +31,7 @@ const App = () => {
             <p ref={textRef}>{quotes.text}</p>
             <p style={{fontStyle:"italic"}}>Author: {quotes.author}</p>
             <div className="btn-area">  
-               <button  onClick={getQuote} class="button7" >Get Quote</button>
+               <button  onClick={getQuote} class="button7" >Get Quote </button>
                <a href='https://twitter.com/intent/tweet?text=${quote.text}' class="button7">Tweet</a>
             </div>
             
